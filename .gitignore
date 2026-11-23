@@ -1,16 +1,7 @@
+# ── Secrets & credentials ──────────────────────────────────────────────────
 .env
 .env.*
 !.env.example
-data/
-audit_logs/
-.chroma/
-reports/
-test_1511/
-__pycache__/
-*.pyc
-.venv/
-venv/
-.claude/
 *.pem
 *.key
 *.p12
@@ -18,3 +9,38 @@ venv/
 secrets/
 credentials.json
 credentials.*
+
+# ── Runtime data ───────────────────────────────────────────────────────────
+data/
+audit_logs/
+.chroma/
+reports/
+test_1511/
+
+# ── Python ─────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+.env/
+
+# ── IDE / tooling ───────────────────────────────────────────────────────────
+.claude/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Streamlit ───────────────────────────────────────────────────────────────
+.streamlit/secrets.toml
